@@ -27,11 +27,12 @@
     <meta property="twitter:image"
       content="https://cloud-hv46l59yd-hack-club-bot.vercel.app/0meta.png" />
 
-    <link rel="stylesheet" href="/styles.css">
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <!--Mischief Bus Adventure, Misguided enterprises-->
   </head>
+<!-- seperator so i know where to edit -->
   <body>
+    
     <p>
       <i>Meeting fellow makers is incredible feeling.</i>
     </p>
@@ -133,34 +134,6 @@
     </p>
   </body>
   <script>
-
-    let Konami = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a', ' '];
-    let currentPosition = 0;
-
-    if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('dark-theme');
-    }
-
-    document.addEventListener('keydown', function(e) {
-
-    if (e.key === Konami[currentPosition]) {
-        currentPosition++;
-
-        if (currentPosition === Konami.length) {
-            if (document.body.classList.contains('dark-theme')) {
-              document.body.classList.remove('dark-theme');
-                localStorage.setItem('theme', 'light');
-            } else {
-              document.body.classList.add('dark-theme');
-                localStorage.setItem('theme', 'dark');
-            }
-            currentPosition = 0;
-        }
-    } else {
-        currentPosition = 0;
-    }
-});
-
     const onFocus = () => {
       document.title = "...see you on the road."
     }
@@ -181,4 +154,5 @@ ______________________________________________________
 `) 
     
   </script>
+
 </html>
